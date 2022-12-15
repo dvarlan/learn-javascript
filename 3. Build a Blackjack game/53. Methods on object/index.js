@@ -1,6 +1,9 @@
 let player = {
     name: "Per",
     chips: 200,
+    sayHello: function() {
+        console.log("Moin")
+    }
 }
 
 let cards = []
@@ -14,6 +17,7 @@ let cardsEl = document.getElementById("cards-el")
 let playerEl = document.getElementById("player-el")
 
 playerEl.textContent = player.name + ": $" + player.chips
+player.sayHello()
 
 function getRandomCard() {
     let randomNumber = Math.floor( Math.random()*13 ) + 1

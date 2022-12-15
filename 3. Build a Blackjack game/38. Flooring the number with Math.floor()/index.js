@@ -9,6 +9,6 @@ console.log(flooredNumber)
 
 What does Math.floor() do to positive numbers?
 
-Your answer: 
+Your answer: Returns the greatest integer less than or equal to its numeric argument.
 
 */

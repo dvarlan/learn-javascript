@@ -1,9 +1,11 @@
 // Refactor the code so that it uses .addEventListener()
 // when you click the SAVE INPUT button
 
-function saveLead() {
+let inputButton = document.getElementById("input-btn")
+
+inputButton.addEventListener("click", function() {
     console.log("Button clicked!")
-}
+})
 
 
 

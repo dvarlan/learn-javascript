@@ -8,6 +8,21 @@
 // "The 2 best fruits are Apples, Bananas"
 
 // Use both a for loop and a template string to solve the challenge
+
+
 function generateSentence(desc, arr) {
     
+    let mySentence = `The ${arr.length} ${desc} are `
+
+    for (let i = 0; i < arr.length; i++) {
+        if (i === arr.length - 1) {
+            mySentence += arr[i]
+        } else {
+            mySentence += arr[i] + ", "
+        }
+    }
+
+    return mySentence
 }
+
+console.log(generateSentence("programming languages i know", ["Java", "C", "Python", "Javascript"]))
